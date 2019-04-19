@@ -1,5 +1,12 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+<div style = "padding: 100px 100px 10px; box-align: center">
 
-<input type="text" [(ngModel)]="city">
-<button (click)="getWeather()">Click Me</button>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">City name</span>
+    </div>
+    <input type="text"  [(ngModel)]="city" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    <button (click)="getWeather()" type="button" class="btn btn-success">Get</button>
+  </div>
 <app-weather-data></app-weather-data>
+</div>
